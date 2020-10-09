@@ -61,6 +61,7 @@
 ### Step 5: Editing the bot to your needs
 * Anyhow, you've got your client secret copied. Head back to the myNewBot folder on yor computer.
 * Create a new file called auth.json. Open it in Visual Studio Code (or whatever you want, Notepad works)
+* You can use code . on Powershell if you have VS Code installed. It'll open all the files on there.
 * Enter this code there, paste your client secret in that field:
 ```
 {
