@@ -13,24 +13,28 @@ client.on('message', async message => {
  
     if (!message.guild) return;
   
-    if (message.content == 'invokeKeyword') { 
+    if (message.content == 'invokeKeyword') { // Replace invokeKeyword with whatever your preferred invoke keyword is
       
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
-        console.log("Started Playing audio.mp3")
-        const dispatcher = connection.play('./audio.mp3'); 
+        console.log("Started Playing audio.mp3") 
+        /* This line above is totally unnecessary. You should put it there for debug purpose 
+        What it'll do is, when someone uses the invoke keyword, it'll print this line on to "your computer's terminal"*/
+
+        const dispatcher = connection.play('./audio.mp3'); // Change this './audio.mp3' with address to your music file. 
+        // Right now, the audio file is assumed to be in the same folder as index.js and is name audio.mp3
         dispatcher.on('finish', () => { 
-            console.log('Finished playing!');  
+            console.log('Finished playing!');   // These lines will print Finished Playing when it finishes playing
             dispatcher.destroy(); 
-            connection.disconnect();          
+            connection.disconnect();            // Disconnect bot after playing
             }); 
             
       } else {
-        message.reply('You need to join a voice channel first!'); 
+        message.reply('You need to join a voice channel first!'); // if some dumbo tries to invoke the bot without joining a VC
       }
     }
   
 
   });
 
-client.login(token);
+client.login(token); //logging in our bot. Don't change anything here.
