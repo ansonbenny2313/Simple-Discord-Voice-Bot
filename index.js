@@ -13,17 +13,16 @@ client.on('message', async message => {
  
     if (!message.guild) return;
   
-    if (message.content === 'invokeKeyword') { 
+    if (message.content == 'invokeKeyword') { 
       
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
-        console.log("Started Playing audio.mp3") 
-       
+        console.log("Started Playing audio.mp3")
         const dispatcher = connection.play('./audio.mp3'); 
         dispatcher.on('finish', () => { 
-            console.log('Finished playing!');   
+            console.log('Finished playing!');  
             dispatcher.destroy(); 
-            connection.disconnect();            
+            connection.disconnect();          
             }); 
             
       } else {
@@ -34,4 +33,4 @@ client.on('message', async message => {
 
   });
 
-client.login(token); 
+client.login(token);
