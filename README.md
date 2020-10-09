@@ -43,6 +43,7 @@
 ### Step 3: Clone this repo to your myNewBot folder
 * If you have git installed, open a terminal in your myNewBot folder (step 1) and just use git clone <repo url> to do it.
 * If not, just download it using a browser and extract it to myNewBot folder
+* Take the index.js file and paste it into myNewBot if it's not already like that.
   
 ### Step 4: Make a new application on Discord Developers and Add your bot to your Server
 * Head over to [Discord Developers Portal](https://discord.com/developers/applications)
