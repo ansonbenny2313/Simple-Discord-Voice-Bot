@@ -33,6 +33,7 @@
 * Enter 
 ``` E:\CringeCompilation\myNewBot> npm install discord.js ffmpeg fluent-ffmpeg @discordjs/opus ytdl-core --save ```
 * It should take a few seconds. Once it's done, there should be bunch of files. Good
+
 **OPTIONAL: For FFMPEG BUG**
 * Now I had a bug with FFMPEG. I solved it by taking the binaries and putting it here.
 * To do so, remember we downloaded a FFMPEG Binaries in before Step 1.
