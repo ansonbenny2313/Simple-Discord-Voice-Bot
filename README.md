@@ -25,7 +25,7 @@
 
 ### Step 2: Using Node and installing Discord libraries
 * In command prompt, enter the following:
-``` E:\CringeCompilation\myNewBot> node init ```
+``` E:\CringeCompilation\myNewBot> npm init ```
 * It should ask you to give the thing a name and stuff. 
 * Just do it. But, when  it asks name for main file, enter index.js
 * Congratulations, you've done it.
