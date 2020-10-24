@@ -25,7 +25,7 @@
 
 ### Step 2: Using Node and installing Discord libraries
 * In command prompt, enter the following:
-``` E:\CringeCompilation\myNewBot> node init ```
+``` E:\CringeCompilation\myNewBot> npm init ```
 * It should ask you to give the thing a name and stuff. 
 * Just do it. But, when  it asks name for main file, enter index.js
 * Congratulations, you've done it.
@@ -33,6 +33,7 @@
 * Enter 
 ``` E:\CringeCompilation\myNewBot> npm install discord.js ffmpeg fluent-ffmpeg @discordjs/opus ytdl-core --save ```
 * It should take a few seconds. Once it's done, there should be bunch of files. Good
+
 **OPTIONAL: For FFMPEG BUG**
 * Now I had a bug with FFMPEG. I solved it by taking the binaries and putting it here.
 * To do so, remember we downloaded a FFMPEG Binaries in before Step 1.
