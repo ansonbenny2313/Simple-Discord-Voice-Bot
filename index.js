@@ -32,26 +32,8 @@
              message.reply('Hey! First You need to join a voice channel !'); // if some dumbo tries to invoke the bot without joining a VC
          }
      }
-     // If you need to make more keywords and sounds, uncomment this or copy and paste it exactly here as many times as you need
-     /*else if (message.content == 'invokeKeyword2') {  
-
-    if (message.member.voice.channel) {
-      const connection = await message.member.voice.channel.join();
-      console.log("Started Playing audio2.mp3")
-      const dispatcher = connection.play('./audio2.mp3');
-      dispatcher.on('finish', () => { 
-          console.log('Finished playing!'); 
-          dispatcher.destroy(); // end the stream
-          connection.disconnect();
-          }); 
-          
-    }
-     else {
-      message.reply('You need to join a voice channel first!');
-    }
-  }
-*/
-
+    
+     
 
  });
 
