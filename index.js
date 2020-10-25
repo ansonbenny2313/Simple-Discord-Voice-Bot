@@ -13,13 +13,12 @@
 
      if (!message.guild) return;
 
-     if (message.content == 'invokeKeyword') { // Replace invokeKeyword with whatever your preferred invoke keyword is
+     if (message.content == 'invokeKeyword') { 
 
          if (message.member.voice.channel) {
              const connection = await message.member.voice.channel.join();
              console.log("> Started Playing audio.mp3 Lalalala ")
-                 /* This line above is totally unnecessary. You should put it there for debug purpose 
-                 What it'll do is, , it'll print this line on to "your computer's terminal"*/
+                
 
              const dispatcher = connection.play('./audio.mp3'); // Change this './audio.mp3' with address to your music file. 
              // Right now, the audio file is assumed to be in the same folder as index.js and is name audio.mp3
